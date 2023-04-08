@@ -1,0 +1,22 @@
+{
+  "intro": "Hey",
+  "heroPhoto": {
+    "src": "../../images/lego-dummy.png",
+    "alt": "My Photo"
+  },
+  "image": {
+    "src": "../../images/waving-hand.png",
+    "alt": "Waving Hand Emoji"
+  },
+  "title": "I'm ALLAF Mohamed Amine",
+  "subtitle": {
+    "prefix": "Software and Data Engineering Student @EMSI",
+    "highlight": "",
+    "suffix": ""
+  },
+  "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
+  "socialProfiles": {
+    "from": ["LinkedIn", "Medium", "Github", "Mail"],
+    "showIcons": true
+  }
+}
