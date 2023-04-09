@@ -6,7 +6,7 @@ export default function ImprintPage() {
     <>
       <Seo title="Imprint" useTitleTemplate={true} noIndex={true} />
       <Page>
-        <LegalSection sectionId="imprint" heading="Imprint" />
+        
       </Page>
     </>
   );

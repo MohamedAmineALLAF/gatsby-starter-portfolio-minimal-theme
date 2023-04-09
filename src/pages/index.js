@@ -1,30 +1,320 @@
 import React from "react";
 import {
   AboutSection,
+  Animation,
   ArticlesSection,
   ContactSection,
   HeroSection,
   InterestsSection,
+  LegalSection,
   Page,
   ProjectsSection,
+  Section,
   Seo,
 } from "gatsby-theme-portfolio-minimal";
+import { ArticleCardSkeleton } from "gatsby-theme-portfolio-minimal/src/components/ArticleCard";
+import { Button, Card, Tabs ,Typography} from "antd";
+import { ButtonType } from "gatsby-theme-portfolio-minimal/src/components/Button";
+import { SocialProfiles } from "gatsby-theme-portfolio-minimal/src/components/SocialProfiles";
+import { useLocalDataSource } from "gatsby-theme-portfolio-minimal/src/sections/Hero/data";
+import {
+  CodeOutlined ,
+  StepForwardOutlined ,
+  CodepenOutlined,
+  DatabaseOutlined,
+  GatewayOutlined,
+  FolderOutlined
+} from '@ant-design/icons';
 
+
+
+
+const { Title } = Typography;
+
+const { TabPane } = Tabs;
 
 
 export default function IndexPage() {
+  const response = useLocalDataSource();
+    const data = response.allHeroJson.sections[0];
   return (
     <>
       <Seo title="Gatsby Starter for Portfolio Minimal" />
       <Page useSplashScreenAnimation>
         <HeroSection sectionId="hero" />
         <AboutSection sectionId="about" heading="About me" />
-       
-        <ArticlesSection sectionId="articles" heading="Tech Stack" sources={['Medium']} />
+        <Animation type="fadeUp">
+                
+
+                <Section heading="Experience" anchor="experience">
+                    <div style={{
+                      display: 'flex',
+                      flexDirection:'row',
+                      justifyContent:'space-around'
+                    }}>
+                    <Tabs defaultActiveKey="1"
+    tabPosition="left"
+    
+     style={{
+  fontFamily:'Roboto',
+  fontWeight:500,
+  fontSize:'large',
+}}>
+        <TabPane tab="LATI AGRO" key="1">
+          <h1>Full Stack Developer @LATI AGRO</h1>
+          <p>February 2022 - August 2022</p>
+          
+
+<ul style={{
+                          listStyle:'square'
+                        }}>
+                          <li>Built and maintained e-commerce app code using Laravel, Livewire, MySQL, Git, and Github</li>
+                          <li>Manually tested sites on multiple browsers and devices for cross-browser compatibility and responsiveness.</li>
+                          
+                          
+                        </ul>
+
+        </TabPane>
+        <TabPane tab="ARKAS Maroc" key="2">
+        <h1>Full Stack Developer @ARKAS </h1>
+          <p>July 2022 - September 2022</p>
+          
+
+<ul style={{
+                          listStyle:'square'
+                        }}>
+                          <li>Built an Inventory Management Application using Spring, Hibernate ,MySQL and Thymeleaf.</li>
+                          <li>Based on an existing dataset for the company.</li>
+                          
+                          
+                        </ul>
+        </TabPane>
+        <TabPane tab="BANQUE POPULAIRE" key="3">
+        <h1>Business Intelligence Intern @BCP</h1>
+          <p>January 2022 - February 2022</p>
+          
+
+<ul style={{
+                          listStyle:'square'
+                        }}>
+                          <li>Comparative Study of Open Source Business Intelligence Tools</li>
+                          <li>Focus on evaluating the tools based on features, functionality, ease of use and support</li>
+                          
+                          
+                        </ul>
+        </TabPane>
+      </Tabs>
+                    </div>
+                   
+
+
+
+                   
+                </Section>
+
+                <Section heading="Technologies & tools" anchor="technologies">
+                    <div style={{
+                      display: 'flex',
+                      flexDirection:'row',
+                      justifyContent:'space-between', 
+                    }}>
+
+                     
+                      <Card hoverable style={{ width: 300,
+                      textAlign:'center'
+                       }}>
+                        <CodeOutlined style={{
+                          fontSize:'45px',
+                          
+                        }} />
+                        <h4>Programming Languages</h4>
+                        
+                          <li style={{
+                            fontSize:'17px'
+                          }}>JavaScript</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Java</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>PHP</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Python</li>
+                        
+                          
+                          
+                        
+                      </Card>
+
+                      <Card hoverable style={{ width: 300,
+                      textAlign:'center'
+                       }}>
+                        
+                        <CodepenOutlined style={{
+                          fontSize:'45px',
+                          
+                        }} />
+                        <h4>Libraries & Frameworks</h4>
+                        
+                          <li style={{
+                            fontSize:'17px'
+                          }}>React</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Gatsby</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Spring Boot</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Hibernate</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Node.js</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Express</li>
+                        
+                          
+                          
+                        
+                      </Card>
+
+                      <Card hoverable style={{ width: 300,
+                      textAlign:'center'
+                       }}>
+                        
+                        <DatabaseOutlined  style={{
+                          fontSize:'45px',
+                          
+                        }} />
+                        <h4>Databases & DevOps</h4>
+                        
+                          <li style={{
+                            fontSize:'17px'
+                          }}>MySQL</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>MongoDB</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Docker</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>MS SQL Server</li>
+                          
+                        
+                          
+                          
+                        
+                      </Card>
+                       
+                     
+                    </div>
+
+                    <div style={{
+                      display: 'flex',
+                      flexDirection:'row',
+                      justifyContent:'space-evenly',
+                      marginTop:'15px' 
+                    }}>
+
+                     
+                      <Card hoverable style={{ width: 300,
+                      textAlign:'center'
+                       }}>
+                        
+                        <GatewayOutlined style={{
+                          fontSize:'45px',
+                          
+                        }} />
+                        <h4>Conception & Architectures:</h4>
+                        
+                          <li style={{
+                            fontSize:'17px'
+                          }}>UML</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Merise</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Design Patterns</li>
+                                               
+                          
+                          
+                        
+                      </Card>
+
+                      <Card hoverable style={{ width: 300,
+                      textAlign:'center'
+                       }}>
+                        
+                       
+                        <FolderOutlined style={{
+                          fontSize:'45px',
+                          
+                        }} />
+                        <h4>Version Control</h4>
+                        
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Git</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Github</li>
+                          
+                          
+                        
+                          
+                          
+                        
+                      </Card>
+
+                      
+                       
+                     
+                    </div>
+                   
+
+
+
+                   
+                </Section>
+
+                
+
+            </Animation>
+
+            <ProjectsSection sectionId="projects" heading="Projects" />
+
+            <Animation type="fadeUp">
+                
+
+                <Section heading="Get in Touch" anchor="contact">
+                    <p style={{
+                      textAlign:'justify',
+                      maxWidth:'800px'
+                    }}>Currently seeking new opportunities and open to any inquiries. If you have any questions or would like to connect, please feel free to reach out to me. I am highly motivated to explore new opportunities and will do my best to respond promptly.</p>
+
+<Animation type="fadeIn">
+{data.socialProfiles && (
+                            <SocialProfiles from={data.socialProfiles.from} showIcon={data.socialProfiles.showIcons} />
+                        )}
+                    </Animation>
+
+
+
+                   
+                </Section>
+
+                
+
+            </Animation>
         
-        <InterestsSection sectionId="details" heading="Details" />
-        <ProjectsSection sectionId="features" heading="Projects" />
-        <ContactSection sectionId="github" heading="Issues?" />
+        
+        
+        
       </Page>
     </>
   );

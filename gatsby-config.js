@@ -25,5 +25,11 @@ module.exports = {
         // }
       },
     },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
+  }
   ],
 };

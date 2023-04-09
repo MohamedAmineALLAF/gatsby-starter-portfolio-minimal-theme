@@ -2,12 +2,12 @@
   "projects": [
     {
       "visible": true,
-      "category": "🕹️ EASY AND QUICK SETUP",
+      
       "title": "Bookstore Project",
-      "description": "Get up and running within minutes. Just install the starter, add your content, deploy it, and there you go! This starter works seamlessly with hosts like Netlify. Photo by Clément H on Unsplash.",
-      "tags": ["Content Integration", "Ready-2-Deploy"],
+      "description": "The MERN stack book store project with Stripe and JWT integration provides a modern, secure, and user-friendly online shopping experience for books. Users can search, purchase, and track their orders with ease.\n With Stripe and JWT, the application provides a secure payment process and user authentication",
+      "tags": ["MERN STACK", "Stripe","JWT","Admin Panel"],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
+        "src": "../../images/Picture2.png",
         "alt": "Quick Setup",
         "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
       },
@@ -15,21 +15,17 @@
         {
           "type": "github",
           "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
-        },
-        {
-          "type": "external",
-          "url": "https://www.gatsbyjs.org/docs/mdx/writing-pages/"
         }
       ]
     },
     {
       "visible": true,
-      "category": "🧰 EXTENDABLE LAYOUT",
-      "title": "Add more sections!",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
-      "tags": ["Custom Sections", "Easy-2-Use"],
+      
+      "title": "Car rental Project",
+      "description": "The car rental project using MERN stack and Stripe integration allows users to rent cars securely online. It provides a user-friendly interface with search, sort, and filter options for easy car selection.\n Users can make payments for their rentals with Stripe integration. The project uses MongoDB for data storage, Express.js for backend, React.js for frontend, and Node.js for server-side programming.",
+      "tags": ["MERN Stack", "Ant Design"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
+        "src": "../../images/Picture3.png",
         "alt": "Extendable Layout"
       },
       "links": [

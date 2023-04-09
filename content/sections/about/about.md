@@ -3,11 +3,9 @@ imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
 imageAlt: "About Gatsby Theme Portfolio Minimal"
 ---
 
-As a software and data engineering student, I have a passion for coding and exploration with continous expanding of my knowledge and skills in this field !
+I am a passionate software and data engineering student with experience in Python, Java, PHP, React, and Express. I have worked on diverse projects involving Software and app development, allowing me to apply my skills to real-world situations. As a team player, I value effective communication and strive to contribute to a shared goal. Thank you for considering my profile.
 
-Throughout my academic career, I have gained experience in programming languages such as Python, Java, and C++, as well as data analysis tools like SQL and R. I have worked on various projects, ranging from developing applications to extracting insights from large datasets, which have given me the opportunity to apply my skills in real-world scenarios.
-
-As a team player, I am always eager to learn from others and contribute to a shared goal. I believe that effective communication is crucial for success in any project, and my strong communication skills enable me to effectively articulate complex technical concepts to non-technical stakeholders.
+With experience in app development and data analysis, I have gained a deeper understanding of this field and its impact on society. My skills in coding, problem-solving, and communication make me a valuable asset to any team.
 
 
 

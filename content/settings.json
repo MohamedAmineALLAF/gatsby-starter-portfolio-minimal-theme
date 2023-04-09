@@ -11,7 +11,7 @@
     "social": {
       "behance": "https://behance.com",
       "github": "https://github.com/MohamedAmineALLAF",
-      "medium":"",
+      "twitter":"https://twitter.com/amineallaf2",
       "linkedin": "https://www.linkedin.com/in/mohamed-amine-allaf-2b198b1a2/",
       "mail": "mailto:amine.allafi@gmail.com"
     }
@@ -21,10 +21,10 @@
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
-        { "label": "Experience", "url": "/#features" },
-        { "label": "Tech Stack", "url": "/#features" },
-        { "label": "Projects", "url": "/#github" },
-        { "label": "Contact", "url": "/#github" }
+        { "label": "Experience", "url": "/#experience" },
+        { "label": "Tech Stack", "url": "/#technologies" },
+        { "label": "Projects", "url": "/#projects" },
+        { "label": "Contact", "url": "/#contact" }
       ],
       "ctaButton": {
         "openNewTab": true,

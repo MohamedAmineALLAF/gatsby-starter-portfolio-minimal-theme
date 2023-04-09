@@ -7,7 +7,7 @@
     "alt": "Gatsby Logo"
   },
   "socialProfiles": {
-    "from": ["LinkedIn", "Medium", "Github", "Mail"],
+    "from": ["LinkedIn", "twitter", "Github", "Mail"],
     "showIcons": true
   }
 }
