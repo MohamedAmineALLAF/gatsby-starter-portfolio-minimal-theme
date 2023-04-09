@@ -18,7 +18,8 @@
     "gatsby-plugin-antd": "^2.2.0",
     "gatsby-theme-portfolio-minimal": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-responsive": "^9.0.2"
   },
   "author": "Konstantin Münster <mail@konstantin.digital>",
   "license": "0BSD",

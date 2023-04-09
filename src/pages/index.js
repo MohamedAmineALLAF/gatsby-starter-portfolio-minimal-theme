@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AboutSection,
   Animation,
@@ -13,7 +13,8 @@ import {
   Seo,
 } from "gatsby-theme-portfolio-minimal";
 import { ArticleCardSkeleton } from "gatsby-theme-portfolio-minimal/src/components/ArticleCard";
-import { Button, Card, Tabs ,Typography} from "antd";
+import { Button, Card, Col, Row, Tabs ,Typography} from "antd";
+import { useMediaQuery } from 'react-responsive';
 import { ButtonType } from "gatsby-theme-portfolio-minimal/src/components/Button";
 import { SocialProfiles } from "gatsby-theme-portfolio-minimal/src/components/SocialProfiles";
 import { useLocalDataSource } from "gatsby-theme-portfolio-minimal/src/sections/Hero/data";
@@ -37,12 +38,24 @@ const { TabPane } = Tabs;
 export default function IndexPage() {
   const response = useLocalDataSource();
     const data = response.allHeroJson.sections[0];
+
+    const isMobile = useMediaQuery({ query: '(min-width: 600px)' })
+
+    const [tabPosition, setTabPosition] = useState('left');
+
+    useEffect(() => {
+      // Update tabposition state whenever isMobile changes
+      setTabPosition(isMobile ? 'left' : 'top');
+    }, [isMobile]);
+
+
   return (
     <>
       <Seo title="Gatsby Starter for Portfolio Minimal" />
       <Page useSplashScreenAnimation>
         <HeroSection sectionId="hero" />
         <AboutSection sectionId="about" heading="About me" />
+        
         <Animation type="fadeUp">
                 
 
@@ -53,7 +66,7 @@ export default function IndexPage() {
                       justifyContent:'space-around'
                     }}>
                     <Tabs defaultActiveKey="1"
-    tabPosition="left"
+    tabPosition={tabPosition}
     
      style={{
   fontFamily:'Roboto',
@@ -113,14 +126,11 @@ export default function IndexPage() {
                 </Section>
 
                 <Section heading="Technologies & tools" anchor="technologies">
-                    <div style={{
-                      display: 'flex',
-                      flexDirection:'row',
-                      justifyContent:'space-between', 
-                    }}>
-
-                     
-                      <Card hoverable style={{ width: 300,
+                <Row>
+                  <Col xs={24} lg={8} md={12} style={{
+                    marginBottom:'4px'
+                  }}>
+                  <Card hoverable style={{ width: 300,
                       textAlign:'center'
                        }}>
                         <CodeOutlined style={{
@@ -146,8 +156,11 @@ export default function IndexPage() {
                           
                         
                       </Card>
-
-                      <Card hoverable style={{ width: 300,
+                  </Col>
+                  <Col xs={24} lg={8} md={12} style={{
+                    marginBottom:'4px'
+                  }}>
+                  <Card hoverable style={{ width: 300,
                       textAlign:'center'
                        }}>
                         
@@ -166,22 +179,21 @@ export default function IndexPage() {
                           <li style={{
                             fontSize:'17px'
                           }}>Spring Boot</li>
+                          
                           <li style={{
                             fontSize:'17px'
-                          }}>Hibernate</li>
-                          <li style={{
-                            fontSize:'17px'
-                          }}>Node.js</li>
-                          <li style={{
-                            fontSize:'17px'
-                          }}>Express</li>
+                          }}>Node.js / Express</li>
+                          
                         
                           
                           
                         
                       </Card>
-
-                      <Card hoverable style={{ width: 300,
+                  </Col>
+                  <Col xs={24} lg={8} md={12} style={{
+                    marginBottom:'4px'
+                  }}>
+                  <Card hoverable style={{ width: 300,
                       textAlign:'center'
                        }}>
                         
@@ -204,25 +216,23 @@ export default function IndexPage() {
                             fontSize:'17px'
                           }}>MS SQL Server</li>
                           
-                        
-                          
-                          
-                        
                       </Card>
-                       
-                     
-                    </div>
+                  </Col>
+                </Row>
 
-                    <div style={{
-                      display: 'flex',
-                      flexDirection:'row',
-                      justifyContent:'space-evenly',
-                      marginTop:'15px' 
-                    }}>
-
-                     
-                      <Card hoverable style={{ width: 300,
-                      textAlign:'center'
+                <Row justify="space-between" style={{
+                  marginTop:'16px'
+                }}>
+                 
+                  
+                  <Col  xs={24} lg={12} md={12} style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems:'center',
+                    marginBottom:'4px'
+                  }}>
+                  <Card hoverable style={{ width: 300,
+                          textAlign:'center'
                        }}>
                         
                         <GatewayOutlined style={{
@@ -244,9 +254,15 @@ export default function IndexPage() {
                           
                           
                         
-                      </Card>
-
-                      <Card hoverable style={{ width: 300,
+                      </Card>    
+                  </Col>
+                  <Col xs={24} lg={12} md={12} style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems:'center',
+                    marginBottom:'4px'
+                  }} >
+                  <Card hoverable style={{ width: 300,
                       textAlign:'center'
                        }}>
                         
@@ -263,6 +279,9 @@ export default function IndexPage() {
                           <li style={{
                             fontSize:'17px'
                           }}>Github</li>
+                          <li style={{
+                            fontSize:'17px'
+                          }}>Gitlab</li>
                           
                           
                         
@@ -270,11 +289,9 @@ export default function IndexPage() {
                           
                         
                       </Card>
-
-                      
-                       
-                     
-                    </div>
+                  </Col>
+                </Row>
+                    
                    
 
 
