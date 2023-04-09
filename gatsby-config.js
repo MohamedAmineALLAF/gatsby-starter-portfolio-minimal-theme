@@ -30,6 +30,9 @@ module.exports = {
       options: {
         style: true
       }
+  },{
+    resolve:'gatsby-transformer-inline-svg'
   }
+  
   ],
 };
