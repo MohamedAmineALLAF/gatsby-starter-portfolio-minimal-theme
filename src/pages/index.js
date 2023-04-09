@@ -30,6 +30,7 @@ import {
 
 
 
+
 const { Title } = Typography;
 
 const { TabPane } = Tabs;
@@ -42,10 +43,13 @@ export default function IndexPage() {
     const isMobile = useMediaQuery({ query: '(min-width: 600px)' })
 
     const [tabPosition, setTabPosition] = useState('left');
+    const [layout, setLayout] = useState('center');
 
     useEffect(() => {
       // Update tabposition state whenever isMobile changes
       setTabPosition(isMobile ? 'left' : 'top');
+      setLayout(isMobile ? '' : 'center');
+      console.log(layout);
     }, [isMobile]);
 
 
@@ -125,13 +129,25 @@ export default function IndexPage() {
                    
                 </Section>
 
-                <Section heading="Technologies & tools" anchor="technologies">
-                <Row>
-                  <Col xs={24} lg={8} md={12} style={{
-                    marginBottom:'4px'
+                <Section heading="Technologies & tools" anchor="technologies" style={{
+                  fontFamily:'Roboto',
+                  
+                }}>
+                <Row  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems:'center',
+                    fontFamily:'Roboto',
                   }}>
-                  <Card hoverable style={{ width: 300,
-                      textAlign:'center'
+                  <Col xs={24} lg={8} md={12} style={{
+                    marginBottom:'5px',
+                    fontFamily:'Roboto',
+
+                  }}>
+                  <Card style={{ width: 300,
+                      textAlign:'center',
+                      border:0,
+                      fontFamily:'Roboto',
                        }}>
                         <CodeOutlined style={{
                           fontSize:'45px',
@@ -160,8 +176,10 @@ export default function IndexPage() {
                   <Col xs={24} lg={8} md={12} style={{
                     marginBottom:'4px'
                   }}>
-                  <Card hoverable style={{ width: 300,
-                      textAlign:'center'
+                  <Card style={{ width: 300,
+                      textAlign:'center',
+                      border:0,
+                      fontFamily:'Roboto',
                        }}>
                         
                         <CodepenOutlined style={{
@@ -193,8 +211,10 @@ export default function IndexPage() {
                   <Col xs={24} lg={8} md={12} style={{
                     marginBottom:'4px'
                   }}>
-                  <Card hoverable style={{ width: 300,
-                      textAlign:'center'
+                  <Card  style={{ width: 300,
+                      textAlign:'center',
+                      border:0,
+                      fontFamily:'Roboto',
                        }}>
                         
                         <DatabaseOutlined  style={{
@@ -218,21 +238,16 @@ export default function IndexPage() {
                           
                       </Card>
                   </Col>
-                </Row>
-
-                <Row justify="space-between" style={{
-                  marginTop:'16px'
-                }}>
-                 
-                  
                   <Col  xs={24} lg={12} md={12} style={{
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems:'center',
                     marginBottom:'4px'
                   }}>
-                  <Card hoverable style={{ width: 300,
-                          textAlign:'center'
+                  <Card style={{ width: 300,
+                          textAlign:'center',
+                          border:0,
+                          fontFamily:'Roboto',
                        }}>
                         
                         <GatewayOutlined style={{
@@ -262,8 +277,10 @@ export default function IndexPage() {
                     alignItems:'center',
                     marginBottom:'4px'
                   }} >
-                  <Card hoverable style={{ width: 300,
-                      textAlign:'center'
+                  <Card style={{ width: 300,
+                      textAlign:'center',
+                      border:0,
+                      fontFamily:'Roboto',
                        }}>
                         
                        
@@ -282,21 +299,9 @@ export default function IndexPage() {
                           <li style={{
                             fontSize:'17px'
                           }}>Gitlab</li>
-                          
-                          
-                        
-                          
-                          
-                        
                       </Card>
                   </Col>
                 </Row>
-                    
-                   
-
-
-
-                   
                 </Section>
 
                 

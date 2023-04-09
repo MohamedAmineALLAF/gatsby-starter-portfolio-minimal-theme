@@ -9,12 +9,12 @@
       "image": {
         "src": "../../images/Picture2.png",
         "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "linkTo": "https://github.com/MohamedAmineALLAF/mini_project_bookstore"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/MohamedAmineALLAF/mini_project_bookstore"
         }
       ]
     },
@@ -23,15 +23,16 @@
       
       "title": "Car rental Project",
       "description": "The car rental project using MERN stack and Stripe integration allows users to rent cars securely online. It provides a user-friendly interface with search, sort, and filter options for easy car selection.\n Users can make payments for their rentals with Stripe integration. The project uses MongoDB for data storage, Express.js for backend, React.js for frontend, and Node.js for server-side programming.",
-      "tags": ["MERN Stack", "Ant Design"],
+      "tags": ["MERN Stack", "Ant Design","Material UI"],
       "image": {
         "src": "../../images/Picture3.png",
-        "alt": "Extendable Layout"
+        "alt": "Extendable Layout",
+        "linkTo":"https://github.com/MohamedAmineALLAF/MERN_car_rental"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/MohamedAmineALLAF/MERN_car_rental"
         }
       ]
     }
@@ -39,6 +40,6 @@
   "button": {
     "visible": true,
     "label": "Visit on Github",
-    "url": "https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal"
+    "url": "https://github.com/MohamedAmineALLAF"
   }
 }
