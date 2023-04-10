@@ -10,3 +10,13 @@
     
     object-fit: cover;
 }
+
+@font-face {
+    font-family: 'Marquette';
+    src: url('fonts/strude.ttf') format('opentype');
+    
+  }
+
+.style-module--Logo--c7351{
+    font-family: 'Marquette', sans-serif;
+}

@@ -17,7 +17,7 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "image": "../content/images/AllaF.png","imageDark": "../content/images/AllaF1.png"},
+    "logo": { "text":"ALLAF"},
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
