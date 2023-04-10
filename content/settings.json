@@ -17,7 +17,7 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "text":"ALLAF"},
+    "logo": { "text":"AllaF"},
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
