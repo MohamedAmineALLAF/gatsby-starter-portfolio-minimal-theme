@@ -1,5 +1,5 @@
 ---
-imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
+imageSrc: "../../images/pic.jpeg"
 imageAlt: "About Gatsby Theme Portfolio Minimal"
 ---
 
