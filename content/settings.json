@@ -1,9 +1,9 @@
 {
   "siteMetadata": {
     "language": "en",
-    "siteUrl": "https://gatsby-starter-portfolio-minimal-theme.netlify.app/",
+    "siteUrl": "https://maallaf.me/",
     "title": "Mohamed Amine ALLAF Portfolio ",
-    "titleTemplate": "%s · Portfolio Minimal",
+    "titleTemplate": "Mohamed Amine ALLAF Portfolio",
     "description": "A Software and Data engineering student portfolio for allaf mohamed amine ",
     "author": "Konstantin Münster",
     "avatar": "../content/images/gatsby.png",
